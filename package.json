@@ -1,0 +1,15 @@
+{
+	"name": "file-dialog",
+	"version": "0.0.1",
+	"description": "Call the file dialog directly in your code",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"author": "Alister Norris",
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/alnorris/file-dialog"
+	}
+}

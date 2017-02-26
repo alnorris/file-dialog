@@ -13,8 +13,8 @@ Supports CommonJS, AMD, and global
 
 ### For Browserify and Webpack projects...
 
-1. `npm install upload-dialog`
-2. Require it `const fileDialog = require('upload-dialog')`
+1. `npm install file-dialog`
+2. Require it `const fileDialog = require('file-dialog')`
 
 ### Classic `<script>` includes
 1. Include via `<script>`

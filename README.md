@@ -4,7 +4,9 @@
 
 Directly call the file browser dialog from your code, and get back the resulting array of [FileList](https://developer.mozilla.org/en/docs/Web/API/FileList). Handy for when you need to post files via AJAX/Fetch. No more hacky hiding of `<input type="file">` elements. Support for Callbacks & Promises! 
 
-Supports CommonJS, AMD, and global
+- Supports CommonJS, AMD, and global
+- No JQuery needed, tiny (1.25 KB), with no dependencies
+- Support for all major browsers
 
 ![alt text](http://i.imgur.com/LjJlg7L.png "Logo Title Text 1")
 

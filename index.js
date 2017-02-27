@@ -10,9 +10,9 @@
         } 
         input.setAttribute('type', 'file')
         
-        const evObj = document.createEvent('MouseEvents');
-        evObj.initMouseEvent('click', true, true, window);
-        input.dispatchEvent(evObj); 
+        const evt = document.createEvent('MouseEvents');
+        evt.initMouseEvent('click', true, true, window, 1, 0, 0, 0, 0, false, false, false, false, 0, null);
+        input.dispatchEvent(evt);
 
         return new Promise((resolve, reject) => {
             input.addEventListener('change', (e) => {

@@ -17,9 +17,10 @@ Directly call the file browser dialog from your code, and get back the resulting
 
 1. `npm install file-dialog`
 2. Require it `const fileDialog = require('file-dialog')`
+3. Note: If you want to support older browsers make sure you have babel enabled.
 
 ### Classic `<script>` includes
-1. Include via `<script>`
+1. Include minified file-dialog.min.js via `<script>`
 2. Module is binded to the global variable `fileDialog`
 
 

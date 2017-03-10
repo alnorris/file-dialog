@@ -45,6 +45,15 @@ fileDialog()
     })
 ```
 
+Allow user to select only an image file
+
+```javascript
+    
+fileDialog({ accept: 'image/*' })
+    .then(files => {
+        // files contains an array of FileList
+    })
+```
 
 Allow user to select multiple image files at once
 

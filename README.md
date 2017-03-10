@@ -6,6 +6,7 @@ Directly call the file browser dialog from your code, and get back the resulting
 
 - Supports CommonJS, AMD, and global
 - No JQuery needed, tiny (1.25 KB), with no dependencies
+- Supports selecting multiple files and the file type 'accepts' attribute (see examples below)
 - Support for all major browsers
 
 ![alt text](http://i.imgur.com/LjJlg7L.png "Logo Title Text 1")

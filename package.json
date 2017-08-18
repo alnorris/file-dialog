@@ -1,8 +1,8 @@
 {
 	"name": "file-dialog",
-	"version": "0.0.5",
+	"version": "0.0.6",
 	"description": "Call the file dialog directly in your code",
-	"main": "index.js",
+	"main": "file-dialog.min.js",
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1"
 	},

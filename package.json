@@ -11,5 +11,6 @@
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/alnorris/file-dialog"
-	}
+	},
+	"typings": "file-dialog.d.ts"
 }

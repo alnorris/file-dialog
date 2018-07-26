@@ -14,10 +14,10 @@ Directly call the file browser dialog from your code, and get back the resulting
 
 ## Install
 
-### For Browserify and Webpack projects...
+### For Webpack/Browserify projects...
 
-1. `npm install file-dialog`
-2. Require it `const fileDialog = require('file-dialog')`
+1. `npm install file-dialog --save`
+2. Require it `const fileDialog = require('file-dialog')` or with ES6 modules `import fileDialog from 'file-dialog'`
 3. Note: If you want to support older browsers make sure you have babel enabled.
 
 ### Classic `<script>` includes

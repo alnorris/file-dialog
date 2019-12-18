@@ -4,21 +4,21 @@
 
 Directly call the file browser dialog from your code, and get back the resulting array of [FileList](https://developer.mozilla.org/en/docs/Web/API/FileList). Handy for when you need to post files via AJAX/Fetch. No more hacky hiding of `<input type="file">` elements. Support for Callbacks & Promises! 
 
-- Supports CommonJS, AMD, and global
-- No JQuery needed, tiny (1.25 KB), with no dependencies
+- Supports ES6 Modules, CommonJS, AMD, and global
 - Supports selecting multiple files and the file type 'accepts' attribute (see examples below)
 - Support for all major browsers
+- No jQuery needed, tiny (1.25 KB), with no dependencies
 
 ![alt text](http://i.imgur.com/LjJlg7L.png "Logo Title Text 1")
 
 
 ## Install
+Supports both CommonJS and ES6 Modules
 
-### For Webpack/Browserify projects...
+1. `npm install file-dialog`
+2. `import fileDialog from 'file-dialog'` or `const fileDialog = require('file-dialog')`
 
-1. `npm install file-dialog --save`
-2. Require it `const fileDialog = require('file-dialog')` or with ES6 modules `import fileDialog from 'file-dialog'`
-3. Note: If you want to support older browsers make sure you have babel enabled.
+Note: If you want to support older browsers make sure you have babel enabled.
 
 ### Classic `<script>` includes
 1. Include minified file-dialog.min.js via `<script>`
@@ -30,7 +30,6 @@ Directly call the file browser dialog from your code, and get back the resulting
 Get a File via a promise and POST to server via Fetch
 
 ```javascript
-    
 fileDialog()
     .then(file => {
         const data = new FormData()
@@ -48,7 +47,6 @@ fileDialog()
 Allow user to select only an image file
 
 ```javascript
-    
 fileDialog({ accept: 'image/*' })
     .then(files => {
         // files contains an array of FileList
@@ -56,7 +54,6 @@ fileDialog({ accept: 'image/*' })
 ```
 
 Allow user to select only images or videos
-
 ```javascript
     
 fileDialog({ accept: ['image/*', 'video/*'] })
@@ -68,7 +65,6 @@ fileDialog({ accept: ['image/*', 'video/*'] })
 Allow user to select multiple image files at once
 
 ```javascript
-    
 fileDialog({ multiple: true, accept: 'image/*' })
     .then(files => {
         // files contains an array of FileList
@@ -78,7 +74,6 @@ fileDialog({ multiple: true, accept: 'image/*' })
 Classic callback version of the above
 
 ```javascript
-    
 fileDialog({ multiple: true, accept: 'image/*' }, files => {
     // files contains an array of FileList
 })

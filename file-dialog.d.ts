@@ -1,6 +1,6 @@
 declare interface FileDialogOptions {
-	multiple?: boolean;
-	accept?: string;
+	readonly multiple?: boolean;
+	readonly accept?: string|ReadonlyArray<string>;
 }
 declare function fileDialog(): Promise<FileList>;
 declare function fileDialog( callback: ( files: FileList ) => void ): Promise<FileList>;

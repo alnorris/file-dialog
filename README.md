@@ -1,5 +1,8 @@
 # file-dialog
 
+Note: This project is deprecated, there is now a native browser api available, please use https://github.com/GoogleChromeLabs/browser-fs-access as a polyfill.
+
+
 [![npm version](https://img.shields.io/npm/v/file-dialog.svg?style=flat)](https://www.npmjs.com/package/file-dialog) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md#pull-requests)
 
 Directly call the file browser dialog from your code, and get back the resulting array of [FileList](https://developer.mozilla.org/en/docs/Web/API/FileList). Handy for when you need to post files via AJAX/Fetch. No more hacky hiding of `<input type="file">` elements. Support for Callbacks & Promises! 
